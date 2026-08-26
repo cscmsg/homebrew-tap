@@ -13,7 +13,7 @@ cask "lippy" do
 
   # MLX is Apple Silicon only, and the app targets macOS 14+.
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Lippy.app"
 
