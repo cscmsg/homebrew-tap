@@ -1,15 +1,14 @@
-# Updated from the source of truth at
-# github.com/cscmsg/lippy -> packaging/homebrew/lippy.rb
-# when a release is cut. Edit there, copy here.
+# Copied from Lippy's own repository when a release is cut, so the version
+# and checksum match what was published.
 
 cask "lippy" do
-  version "0.9.0"
-  sha256 "3b95c34ccb246ad8e3f921d4fe2f3d4e080eb5973ed39e213b01542ab1e483f0"
+  version "0.10.0"
+  sha256 "fa351810abbbb48110436ad0b5904f44d4f464459e44bbdad993892c6e062ac7"
 
-  url "https://github.com/cscmsg/lippy/releases/download/v#{version}/Lippy-#{version}.dmg"
+  url "https://github.com/cscmsg/lippy-releases/releases/download/v#{version}/Lippy-#{version}.dmg"
   name "Lippy"
   desc "Local dictation with on-device transcript cleanup"
-  homepage "https://github.com/cscmsg/lippy"
+  homepage "https://protodemo.com/lippy/"
 
   # MLX is Apple Silicon only, and the app targets macOS 14+.
   depends_on arch: :arm64
